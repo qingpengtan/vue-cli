@@ -1,0 +1,27 @@
+<template>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
+    <request-loding></request-loding>
+  </div>
+</template>
+
+<script>
+import RequestLoding from "@/components/RequestLoading.vue";
+export default {
+  components: {
+    RequestLoding
+  }
+};
+</script>
+
+<style lang="scss">
+#app {
+  text-align: center;
+  color: #2c3e50;
+}
+
+</style>
