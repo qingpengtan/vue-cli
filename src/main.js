@@ -4,8 +4,10 @@ import router from './router'
 import store from './store'
 import './components'
 import './icons'
-import './assets/styles/icon.css'
-// import '@/utils/permission'
+
+// import './assets/styles/global.scss'
+import './assets/js/htmlFontSizeNoScale'
+import './assets/js/fastClick'
 
 Vue.config.productionTip = false
 

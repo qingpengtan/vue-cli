@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>hello world</h1>
+        <span>hello world</span>
     </div>
 </template>
 
@@ -10,6 +10,11 @@ name:'Home'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '@/assets/css/style.scss';
+
+span{
+    font-size: 24px;
+}
 
 </style>
