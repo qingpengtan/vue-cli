@@ -10,12 +10,8 @@ export default new Router({
   routes: [{
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      // redirect:"/wallet"
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import( /* webpackChunkName: "about" */ './views/Home.vue')
-    }
   ]
 })

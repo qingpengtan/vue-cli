@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-    <request-loding></request-loding>
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
   </div>
 </template>
 
@@ -20,8 +18,8 @@ export default {
 
 <style lang="scss">
 #app {
-  text-align: center;
-  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-
 </style>
